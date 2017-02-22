@@ -1,0 +1,213 @@
+//@import "reset";
+@mixin clearfix {
+  &:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  }
+}
+@mixin backgroundSize {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin animation($params) { 
+    -webkit-animation:$params;
+    -moz-animation:$params;
+    -ms-animation:$params;
+    animation:$params;
+}
+@mixin anim($animName, $steps, $animNbr, $animParams){
+    .#{$animName} { 
+        @content;
+        -webkit-animation:$animName steps($steps) $animParams;
+        -moz-animation:$animName steps($steps) $animParams; 
+        -ms-animation:$animName steps($steps) $animParams; 
+        -o-animation:$animName steps($steps) $animParams; 
+        animation:$animName steps($steps) $animParams;  
+    }
+    @-webkit-keyframes #{$animName} {
+        0% { 
+          -webkit-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -moz-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -ms-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -o-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          background-position:0px (-$kickassImgHeight * ($animNbr - 1)); 
+        }
+        100% { 
+          -webkit-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1));
+          -moz-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          -ms-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          -o-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1));  
+        }
+    }
+    @keyframes #{$animName} {
+        0% { 
+          -webkit-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -moz-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -ms-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          -o-background-position:0px (-$kickassImgHeight * ($animNbr - 1));
+          background-position:0px (-$kickassImgHeight * ($animNbr - 1)); 
+        }
+        100% { 
+          -webkit-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1));
+          -moz-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          -ms-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          -o-background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1)); 
+          background-position:-($kickassImgWidth * $steps) (-$kickassImgHeight * ($animNbr - 1));  
+        }
+    }
+}
+
+
+$white: #ffffff; 
+$gray: #CBCBCB;
+$dayGray: #6e6e6e;
+$black: #000000;
+$red: #b71234;
+$lightBlue: #2bb9e7; 
+$titleColor: #565656;
+$paraColor: #9a9a9a;
+$callAction: #f45a6a;
+$black: #000000;
+$headerFooter: #222;
+
+//Ninja
+$kickassImgWidth:180px;
+$kickassImgHeight:180px;
+//Street Fighter
+//$kickassImgWidth:140px;
+//$kickassImgHeight:160px;
+
+body {
+  font-size: 15px;
+}
+h1,h2,h3,h4,h5 {
+  color: $titleColor;
+}
+p {
+  color: $paraColor;
+}
+a:focus, a:active, a:focus:active {
+  outline: none;
+}
+.red {
+  color: $red;
+}
+
+.section {
+    //border-bottom: 1px solid $gray;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+
+ 
+ .footer {
+  background-color: $headerFooter;
+  border-color: $black;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+ }
+
+
+ // Start - Anime feature
+ .animeContr {
+  background: url('/app_images/competitionBG3.png') repeat-x; 
+  border: 1px solid $lightBlue;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+ }
+ .kickass, .star, .explode {
+  position: absolute;
+  top: 85px;
+  display: inline-block;
+  //border: 2px solid black;
+  width: 180px;
+  height: 180px;
+  background-image:url('/app_images/stickMan3.png');
+  z-index: 2; 
+ }
+
+.competition {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  z-index: 1;
+}
+.explode {
+  top: 50px;
+  right: -43px;
+}
+.animeIconsCntr {
+  position: relative;
+  margin-bottom: 20px;
+}
+.animeIconsCntr img { 
+  width: 70px;
+}
+.animeDiableLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* stance */
+@include anim($animName:stance, $steps:4, $animNbr:2, $animParams:.7s infinite);
+/* punch */
+@include anim($animName:punch, $steps:7, $animNbr:3, $animParams:.7s infinite);
+/* kneel punch */
+@include anim($animName:kneelpunch, $steps:7, $animNbr:1, $animParams:.7s infinite);
+/* kick */
+@include anim($animName:kick, $steps:9, $animNbr:6, $animParams:.9s infinite);
+/* ground kick */
+@include anim($animName:groundkick, $steps:8, $animNbr:7, $animParams:.6s infinite);
+/* walking */
+@include anim($animName:walk, $steps:7, $animNbr:4, $animParams:.5s infinite);
+/* reverse walking */
+@include anim($animName:reversewalk, $steps:7, $animNbr:5, $animParams:.5s infinite);
+/* low kick */
+@include anim($animName:lowkick, $steps:4, $animNbr:8, $animParams:.5s infinite);
+/* jump kick */
+@include anim($animName:jumpkick, $steps:7, $animNbr:9, $animParams:.6s infinite) { 
+  transition:top .3s cubic-bezier(0.990, 0.005, 0.000, 0.420);
+  top:65px;
+  &.down { top:110px; }
+};
+/* front flip */
+@include anim($animName:frontflip, $steps:7, $animNbr:10, $animParams:.7s infinite);
+/* back flip */
+@include anim($animName:backflip, $steps:7, $animNbr:11, $animParams:.7s infinite);
+/* Ninja Star*/
+@include anim($animName:ninjastar, $steps:5, $animNbr:12, $animParams:.5s infinite);
+/* Ninja Star*/
+@include anim($animName:star, $steps:2, $animNbr:13, $animParams:.5s infinite);
+/* Ninja Sword Slice*/
+@include anim($animName:swordslice, $steps:7, $animNbr:14, $animParams:.5s infinite);
+/* Explode */
+@include anim($animName:explode, $steps:9, $animNbr:15, $animParams:1s infinite);
+/* Ninja Sword Katana */
+@include anim($animName:swordkatana, $steps:11, $animNbr:16, $animParams:.5s infinite);
+/* Ninja Daggers */
+//@include anim($animName:daggers, $steps:7, $animNbr:17, $animParams:.7s infinite);
+
+//End - anime feature 
+

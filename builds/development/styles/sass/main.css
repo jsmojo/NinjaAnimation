@@ -1,0 +1,775 @@
+/* line 94, builds/development/styles/sass/main.scss */
+body {
+  font-size: 15px;
+}
+
+/* line 97, builds/development/styles/sass/main.scss */
+h1, h2, h3, h4, h5 {
+  color: #565656;
+}
+
+/* line 100, builds/development/styles/sass/main.scss */
+p {
+  color: #9a9a9a;
+}
+
+/* line 103, builds/development/styles/sass/main.scss */
+a:focus, a:active, a:focus:active {
+  outline: none;
+}
+
+/* line 106, builds/development/styles/sass/main.scss */
+.red {
+  color: #b71234;
+}
+
+/* line 110, builds/development/styles/sass/main.scss */
+.section {
+  padding-bottom: 40px;
+  margin-top: 60px;
+}
+
+/* line 118, builds/development/styles/sass/main.scss */
+.footer {
+  background-color: #222;
+  border-color: #000000;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+}
+
+/* line 127, builds/development/styles/sass/main.scss */
+.animeContr {
+  background: url("/app_images/competitionBG3.png") repeat-x;
+  border: 1px solid #2bb9e7;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 134, builds/development/styles/sass/main.scss */
+.kickass, .star, .explode {
+  position: absolute;
+  top: 85px;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  background-image: url("/app_images/stickMan3.png");
+  z-index: 2;
+}
+
+/* line 145, builds/development/styles/sass/main.scss */
+.competition {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* line 151, builds/development/styles/sass/main.scss */
+.explode {
+  top: 50px;
+  right: -43px;
+}
+
+/* line 155, builds/development/styles/sass/main.scss */
+.animeIconsCntr {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 159, builds/development/styles/sass/main.scss */
+.animeIconsCntr img {
+  width: 70px;
+}
+
+/* line 162, builds/development/styles/sass/main.scss */
+.animeDiableLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* stance */
+/* line 32, builds/development/styles/sass/main.scss */
+.stance {
+  -webkit-animation: stance steps(4) 0.7s infinite;
+  -moz-animation: stance steps(4) 0.7s infinite;
+  -ms-animation: stance steps(4) 0.7s infinite;
+  -o-animation: stance steps(4) 0.7s infinite;
+  animation: stance steps(4) 0.7s infinite;
+}
+
+@-webkit-keyframes stance {
+  0% {
+    -webkit-background-position: 0px -180px;
+    -moz-background-position: 0px -180px;
+    -ms-background-position: 0px -180px;
+    -o-background-position: 0px -180px;
+    background-position: 0px -180px;
+  }
+  100% {
+    -webkit-background-position: -720px -180px;
+    -moz-background-position: -720px -180px;
+    -ms-background-position: -720px -180px;
+    -o-background-position: -720px -180px;
+    background-position: -720px -180px;
+  }
+}
+@keyframes stance {
+  0% {
+    -webkit-background-position: 0px -180px;
+    -moz-background-position: 0px -180px;
+    -ms-background-position: 0px -180px;
+    -o-background-position: 0px -180px;
+    background-position: 0px -180px;
+  }
+  100% {
+    -webkit-background-position: -720px -180px;
+    -moz-background-position: -720px -180px;
+    -ms-background-position: -720px -180px;
+    -o-background-position: -720px -180px;
+    background-position: -720px -180px;
+  }
+}
+/* punch */
+/* line 32, builds/development/styles/sass/main.scss */
+.punch {
+  -webkit-animation: punch steps(7) 0.7s infinite;
+  -moz-animation: punch steps(7) 0.7s infinite;
+  -ms-animation: punch steps(7) 0.7s infinite;
+  -o-animation: punch steps(7) 0.7s infinite;
+  animation: punch steps(7) 0.7s infinite;
+}
+
+@-webkit-keyframes punch {
+  0% {
+    -webkit-background-position: 0px -360px;
+    -moz-background-position: 0px -360px;
+    -ms-background-position: 0px -360px;
+    -o-background-position: 0px -360px;
+    background-position: 0px -360px;
+  }
+  100% {
+    -webkit-background-position: -1260px -360px;
+    -moz-background-position: -1260px -360px;
+    -ms-background-position: -1260px -360px;
+    -o-background-position: -1260px -360px;
+    background-position: -1260px -360px;
+  }
+}
+@keyframes punch {
+  0% {
+    -webkit-background-position: 0px -360px;
+    -moz-background-position: 0px -360px;
+    -ms-background-position: 0px -360px;
+    -o-background-position: 0px -360px;
+    background-position: 0px -360px;
+  }
+  100% {
+    -webkit-background-position: -1260px -360px;
+    -moz-background-position: -1260px -360px;
+    -ms-background-position: -1260px -360px;
+    -o-background-position: -1260px -360px;
+    background-position: -1260px -360px;
+  }
+}
+/* kneel punch */
+/* line 32, builds/development/styles/sass/main.scss */
+.kneelpunch {
+  -webkit-animation: kneelpunch steps(7) 0.7s infinite;
+  -moz-animation: kneelpunch steps(7) 0.7s infinite;
+  -ms-animation: kneelpunch steps(7) 0.7s infinite;
+  -o-animation: kneelpunch steps(7) 0.7s infinite;
+  animation: kneelpunch steps(7) 0.7s infinite;
+}
+
+@-webkit-keyframes kneelpunch {
+  0% {
+    -webkit-background-position: 0px 0px;
+    -moz-background-position: 0px 0px;
+    -ms-background-position: 0px 0px;
+    -o-background-position: 0px 0px;
+    background-position: 0px 0px;
+  }
+  100% {
+    -webkit-background-position: -1260px 0px;
+    -moz-background-position: -1260px 0px;
+    -ms-background-position: -1260px 0px;
+    -o-background-position: -1260px 0px;
+    background-position: -1260px 0px;
+  }
+}
+@keyframes kneelpunch {
+  0% {
+    -webkit-background-position: 0px 0px;
+    -moz-background-position: 0px 0px;
+    -ms-background-position: 0px 0px;
+    -o-background-position: 0px 0px;
+    background-position: 0px 0px;
+  }
+  100% {
+    -webkit-background-position: -1260px 0px;
+    -moz-background-position: -1260px 0px;
+    -ms-background-position: -1260px 0px;
+    -o-background-position: -1260px 0px;
+    background-position: -1260px 0px;
+  }
+}
+/* kick */
+/* line 32, builds/development/styles/sass/main.scss */
+.kick {
+  -webkit-animation: kick steps(9) 0.9s infinite;
+  -moz-animation: kick steps(9) 0.9s infinite;
+  -ms-animation: kick steps(9) 0.9s infinite;
+  -o-animation: kick steps(9) 0.9s infinite;
+  animation: kick steps(9) 0.9s infinite;
+}
+
+@-webkit-keyframes kick {
+  0% {
+    -webkit-background-position: 0px -900px;
+    -moz-background-position: 0px -900px;
+    -ms-background-position: 0px -900px;
+    -o-background-position: 0px -900px;
+    background-position: 0px -900px;
+  }
+  100% {
+    -webkit-background-position: -1620px -900px;
+    -moz-background-position: -1620px -900px;
+    -ms-background-position: -1620px -900px;
+    -o-background-position: -1620px -900px;
+    background-position: -1620px -900px;
+  }
+}
+@keyframes kick {
+  0% {
+    -webkit-background-position: 0px -900px;
+    -moz-background-position: 0px -900px;
+    -ms-background-position: 0px -900px;
+    -o-background-position: 0px -900px;
+    background-position: 0px -900px;
+  }
+  100% {
+    -webkit-background-position: -1620px -900px;
+    -moz-background-position: -1620px -900px;
+    -ms-background-position: -1620px -900px;
+    -o-background-position: -1620px -900px;
+    background-position: -1620px -900px;
+  }
+}
+/* ground kick */
+/* line 32, builds/development/styles/sass/main.scss */
+.groundkick {
+  -webkit-animation: groundkick steps(8) 0.6s infinite;
+  -moz-animation: groundkick steps(8) 0.6s infinite;
+  -ms-animation: groundkick steps(8) 0.6s infinite;
+  -o-animation: groundkick steps(8) 0.6s infinite;
+  animation: groundkick steps(8) 0.6s infinite;
+}
+
+@-webkit-keyframes groundkick {
+  0% {
+    -webkit-background-position: 0px -1080px;
+    -moz-background-position: 0px -1080px;
+    -ms-background-position: 0px -1080px;
+    -o-background-position: 0px -1080px;
+    background-position: 0px -1080px;
+  }
+  100% {
+    -webkit-background-position: -1440px -1080px;
+    -moz-background-position: -1440px -1080px;
+    -ms-background-position: -1440px -1080px;
+    -o-background-position: -1440px -1080px;
+    background-position: -1440px -1080px;
+  }
+}
+@keyframes groundkick {
+  0% {
+    -webkit-background-position: 0px -1080px;
+    -moz-background-position: 0px -1080px;
+    -ms-background-position: 0px -1080px;
+    -o-background-position: 0px -1080px;
+    background-position: 0px -1080px;
+  }
+  100% {
+    -webkit-background-position: -1440px -1080px;
+    -moz-background-position: -1440px -1080px;
+    -ms-background-position: -1440px -1080px;
+    -o-background-position: -1440px -1080px;
+    background-position: -1440px -1080px;
+  }
+}
+/* walking */
+/* line 32, builds/development/styles/sass/main.scss */
+.walk {
+  -webkit-animation: walk steps(7) 0.5s infinite;
+  -moz-animation: walk steps(7) 0.5s infinite;
+  -ms-animation: walk steps(7) 0.5s infinite;
+  -o-animation: walk steps(7) 0.5s infinite;
+  animation: walk steps(7) 0.5s infinite;
+}
+
+@-webkit-keyframes walk {
+  0% {
+    -webkit-background-position: 0px -540px;
+    -moz-background-position: 0px -540px;
+    -ms-background-position: 0px -540px;
+    -o-background-position: 0px -540px;
+    background-position: 0px -540px;
+  }
+  100% {
+    -webkit-background-position: -1260px -540px;
+    -moz-background-position: -1260px -540px;
+    -ms-background-position: -1260px -540px;
+    -o-background-position: -1260px -540px;
+    background-position: -1260px -540px;
+  }
+}
+@keyframes walk {
+  0% {
+    -webkit-background-position: 0px -540px;
+    -moz-background-position: 0px -540px;
+    -ms-background-position: 0px -540px;
+    -o-background-position: 0px -540px;
+    background-position: 0px -540px;
+  }
+  100% {
+    -webkit-background-position: -1260px -540px;
+    -moz-background-position: -1260px -540px;
+    -ms-background-position: -1260px -540px;
+    -o-background-position: -1260px -540px;
+    background-position: -1260px -540px;
+  }
+}
+/* reverse walking */
+/* line 32, builds/development/styles/sass/main.scss */
+.reversewalk {
+  -webkit-animation: reversewalk steps(7) 0.5s infinite;
+  -moz-animation: reversewalk steps(7) 0.5s infinite;
+  -ms-animation: reversewalk steps(7) 0.5s infinite;
+  -o-animation: reversewalk steps(7) 0.5s infinite;
+  animation: reversewalk steps(7) 0.5s infinite;
+}
+
+@-webkit-keyframes reversewalk {
+  0% {
+    -webkit-background-position: 0px -720px;
+    -moz-background-position: 0px -720px;
+    -ms-background-position: 0px -720px;
+    -o-background-position: 0px -720px;
+    background-position: 0px -720px;
+  }
+  100% {
+    -webkit-background-position: -1260px -720px;
+    -moz-background-position: -1260px -720px;
+    -ms-background-position: -1260px -720px;
+    -o-background-position: -1260px -720px;
+    background-position: -1260px -720px;
+  }
+}
+@keyframes reversewalk {
+  0% {
+    -webkit-background-position: 0px -720px;
+    -moz-background-position: 0px -720px;
+    -ms-background-position: 0px -720px;
+    -o-background-position: 0px -720px;
+    background-position: 0px -720px;
+  }
+  100% {
+    -webkit-background-position: -1260px -720px;
+    -moz-background-position: -1260px -720px;
+    -ms-background-position: -1260px -720px;
+    -o-background-position: -1260px -720px;
+    background-position: -1260px -720px;
+  }
+}
+/* low kick */
+/* line 32, builds/development/styles/sass/main.scss */
+.lowkick {
+  -webkit-animation: lowkick steps(4) 0.5s infinite;
+  -moz-animation: lowkick steps(4) 0.5s infinite;
+  -ms-animation: lowkick steps(4) 0.5s infinite;
+  -o-animation: lowkick steps(4) 0.5s infinite;
+  animation: lowkick steps(4) 0.5s infinite;
+}
+
+@-webkit-keyframes lowkick {
+  0% {
+    -webkit-background-position: 0px -1260px;
+    -moz-background-position: 0px -1260px;
+    -ms-background-position: 0px -1260px;
+    -o-background-position: 0px -1260px;
+    background-position: 0px -1260px;
+  }
+  100% {
+    -webkit-background-position: -720px -1260px;
+    -moz-background-position: -720px -1260px;
+    -ms-background-position: -720px -1260px;
+    -o-background-position: -720px -1260px;
+    background-position: -720px -1260px;
+  }
+}
+@keyframes lowkick {
+  0% {
+    -webkit-background-position: 0px -1260px;
+    -moz-background-position: 0px -1260px;
+    -ms-background-position: 0px -1260px;
+    -o-background-position: 0px -1260px;
+    background-position: 0px -1260px;
+  }
+  100% {
+    -webkit-background-position: -720px -1260px;
+    -moz-background-position: -720px -1260px;
+    -ms-background-position: -720px -1260px;
+    -o-background-position: -720px -1260px;
+    background-position: -720px -1260px;
+  }
+}
+/* jump kick */
+/* line 32, builds/development/styles/sass/main.scss */
+.jumpkick {
+  transition: top 0.3s cubic-bezier(0.99, 0.005, 0, 0.42);
+  top: 65px;
+  -webkit-animation: jumpkick steps(7) 0.6s infinite;
+  -moz-animation: jumpkick steps(7) 0.6s infinite;
+  -ms-animation: jumpkick steps(7) 0.6s infinite;
+  -o-animation: jumpkick steps(7) 0.6s infinite;
+  animation: jumpkick steps(7) 0.6s infinite;
+}
+/* line 193, builds/development/styles/sass/main.scss */
+.jumpkick.down {
+  top: 110px;
+}
+
+@-webkit-keyframes jumpkick {
+  0% {
+    -webkit-background-position: 0px -1440px;
+    -moz-background-position: 0px -1440px;
+    -ms-background-position: 0px -1440px;
+    -o-background-position: 0px -1440px;
+    background-position: 0px -1440px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1440px;
+    -moz-background-position: -1260px -1440px;
+    -ms-background-position: -1260px -1440px;
+    -o-background-position: -1260px -1440px;
+    background-position: -1260px -1440px;
+  }
+}
+@keyframes jumpkick {
+  0% {
+    -webkit-background-position: 0px -1440px;
+    -moz-background-position: 0px -1440px;
+    -ms-background-position: 0px -1440px;
+    -o-background-position: 0px -1440px;
+    background-position: 0px -1440px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1440px;
+    -moz-background-position: -1260px -1440px;
+    -ms-background-position: -1260px -1440px;
+    -o-background-position: -1260px -1440px;
+    background-position: -1260px -1440px;
+  }
+}
+/* front flip */
+/* line 32, builds/development/styles/sass/main.scss */
+.frontflip {
+  -webkit-animation: frontflip steps(7) 0.7s infinite;
+  -moz-animation: frontflip steps(7) 0.7s infinite;
+  -ms-animation: frontflip steps(7) 0.7s infinite;
+  -o-animation: frontflip steps(7) 0.7s infinite;
+  animation: frontflip steps(7) 0.7s infinite;
+}
+
+@-webkit-keyframes frontflip {
+  0% {
+    -webkit-background-position: 0px -1620px;
+    -moz-background-position: 0px -1620px;
+    -ms-background-position: 0px -1620px;
+    -o-background-position: 0px -1620px;
+    background-position: 0px -1620px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1620px;
+    -moz-background-position: -1260px -1620px;
+    -ms-background-position: -1260px -1620px;
+    -o-background-position: -1260px -1620px;
+    background-position: -1260px -1620px;
+  }
+}
+@keyframes frontflip {
+  0% {
+    -webkit-background-position: 0px -1620px;
+    -moz-background-position: 0px -1620px;
+    -ms-background-position: 0px -1620px;
+    -o-background-position: 0px -1620px;
+    background-position: 0px -1620px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1620px;
+    -moz-background-position: -1260px -1620px;
+    -ms-background-position: -1260px -1620px;
+    -o-background-position: -1260px -1620px;
+    background-position: -1260px -1620px;
+  }
+}
+/* back flip */
+/* line 32, builds/development/styles/sass/main.scss */
+.backflip {
+  -webkit-animation: backflip steps(7) 0.7s infinite;
+  -moz-animation: backflip steps(7) 0.7s infinite;
+  -ms-animation: backflip steps(7) 0.7s infinite;
+  -o-animation: backflip steps(7) 0.7s infinite;
+  animation: backflip steps(7) 0.7s infinite;
+}
+
+@-webkit-keyframes backflip {
+  0% {
+    -webkit-background-position: 0px -1800px;
+    -moz-background-position: 0px -1800px;
+    -ms-background-position: 0px -1800px;
+    -o-background-position: 0px -1800px;
+    background-position: 0px -1800px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1800px;
+    -moz-background-position: -1260px -1800px;
+    -ms-background-position: -1260px -1800px;
+    -o-background-position: -1260px -1800px;
+    background-position: -1260px -1800px;
+  }
+}
+@keyframes backflip {
+  0% {
+    -webkit-background-position: 0px -1800px;
+    -moz-background-position: 0px -1800px;
+    -ms-background-position: 0px -1800px;
+    -o-background-position: 0px -1800px;
+    background-position: 0px -1800px;
+  }
+  100% {
+    -webkit-background-position: -1260px -1800px;
+    -moz-background-position: -1260px -1800px;
+    -ms-background-position: -1260px -1800px;
+    -o-background-position: -1260px -1800px;
+    background-position: -1260px -1800px;
+  }
+}
+/* Ninja Star*/
+/* line 32, builds/development/styles/sass/main.scss */
+.ninjastar {
+  -webkit-animation: ninjastar steps(5) 0.5s infinite;
+  -moz-animation: ninjastar steps(5) 0.5s infinite;
+  -ms-animation: ninjastar steps(5) 0.5s infinite;
+  -o-animation: ninjastar steps(5) 0.5s infinite;
+  animation: ninjastar steps(5) 0.5s infinite;
+}
+
+@-webkit-keyframes ninjastar {
+  0% {
+    -webkit-background-position: 0px -1980px;
+    -moz-background-position: 0px -1980px;
+    -ms-background-position: 0px -1980px;
+    -o-background-position: 0px -1980px;
+    background-position: 0px -1980px;
+  }
+  100% {
+    -webkit-background-position: -900px -1980px;
+    -moz-background-position: -900px -1980px;
+    -ms-background-position: -900px -1980px;
+    -o-background-position: -900px -1980px;
+    background-position: -900px -1980px;
+  }
+}
+@keyframes ninjastar {
+  0% {
+    -webkit-background-position: 0px -1980px;
+    -moz-background-position: 0px -1980px;
+    -ms-background-position: 0px -1980px;
+    -o-background-position: 0px -1980px;
+    background-position: 0px -1980px;
+  }
+  100% {
+    -webkit-background-position: -900px -1980px;
+    -moz-background-position: -900px -1980px;
+    -ms-background-position: -900px -1980px;
+    -o-background-position: -900px -1980px;
+    background-position: -900px -1980px;
+  }
+}
+/* Ninja Star*/
+/* line 32, builds/development/styles/sass/main.scss */
+.star {
+  -webkit-animation: star steps(2) 0.5s infinite;
+  -moz-animation: star steps(2) 0.5s infinite;
+  -ms-animation: star steps(2) 0.5s infinite;
+  -o-animation: star steps(2) 0.5s infinite;
+  animation: star steps(2) 0.5s infinite;
+}
+
+@-webkit-keyframes star {
+  0% {
+    -webkit-background-position: 0px -2160px;
+    -moz-background-position: 0px -2160px;
+    -ms-background-position: 0px -2160px;
+    -o-background-position: 0px -2160px;
+    background-position: 0px -2160px;
+  }
+  100% {
+    -webkit-background-position: -360px -2160px;
+    -moz-background-position: -360px -2160px;
+    -ms-background-position: -360px -2160px;
+    -o-background-position: -360px -2160px;
+    background-position: -360px -2160px;
+  }
+}
+@keyframes star {
+  0% {
+    -webkit-background-position: 0px -2160px;
+    -moz-background-position: 0px -2160px;
+    -ms-background-position: 0px -2160px;
+    -o-background-position: 0px -2160px;
+    background-position: 0px -2160px;
+  }
+  100% {
+    -webkit-background-position: -360px -2160px;
+    -moz-background-position: -360px -2160px;
+    -ms-background-position: -360px -2160px;
+    -o-background-position: -360px -2160px;
+    background-position: -360px -2160px;
+  }
+}
+/* Ninja Sword Slice*/
+/* line 32, builds/development/styles/sass/main.scss */
+.swordslice {
+  -webkit-animation: swordslice steps(7) 0.5s infinite;
+  -moz-animation: swordslice steps(7) 0.5s infinite;
+  -ms-animation: swordslice steps(7) 0.5s infinite;
+  -o-animation: swordslice steps(7) 0.5s infinite;
+  animation: swordslice steps(7) 0.5s infinite;
+}
+
+@-webkit-keyframes swordslice {
+  0% {
+    -webkit-background-position: 0px -2340px;
+    -moz-background-position: 0px -2340px;
+    -ms-background-position: 0px -2340px;
+    -o-background-position: 0px -2340px;
+    background-position: 0px -2340px;
+  }
+  100% {
+    -webkit-background-position: -1260px -2340px;
+    -moz-background-position: -1260px -2340px;
+    -ms-background-position: -1260px -2340px;
+    -o-background-position: -1260px -2340px;
+    background-position: -1260px -2340px;
+  }
+}
+@keyframes swordslice {
+  0% {
+    -webkit-background-position: 0px -2340px;
+    -moz-background-position: 0px -2340px;
+    -ms-background-position: 0px -2340px;
+    -o-background-position: 0px -2340px;
+    background-position: 0px -2340px;
+  }
+  100% {
+    -webkit-background-position: -1260px -2340px;
+    -moz-background-position: -1260px -2340px;
+    -ms-background-position: -1260px -2340px;
+    -o-background-position: -1260px -2340px;
+    background-position: -1260px -2340px;
+  }
+}
+/* Explode */
+/* line 32, builds/development/styles/sass/main.scss */
+.explode {
+  -webkit-animation: explode steps(9) 1s infinite;
+  -moz-animation: explode steps(9) 1s infinite;
+  -ms-animation: explode steps(9) 1s infinite;
+  -o-animation: explode steps(9) 1s infinite;
+  animation: explode steps(9) 1s infinite;
+}
+
+@-webkit-keyframes explode {
+  0% {
+    -webkit-background-position: 0px -2520px;
+    -moz-background-position: 0px -2520px;
+    -ms-background-position: 0px -2520px;
+    -o-background-position: 0px -2520px;
+    background-position: 0px -2520px;
+  }
+  100% {
+    -webkit-background-position: -1620px -2520px;
+    -moz-background-position: -1620px -2520px;
+    -ms-background-position: -1620px -2520px;
+    -o-background-position: -1620px -2520px;
+    background-position: -1620px -2520px;
+  }
+}
+@keyframes explode {
+  0% {
+    -webkit-background-position: 0px -2520px;
+    -moz-background-position: 0px -2520px;
+    -ms-background-position: 0px -2520px;
+    -o-background-position: 0px -2520px;
+    background-position: 0px -2520px;
+  }
+  100% {
+    -webkit-background-position: -1620px -2520px;
+    -moz-background-position: -1620px -2520px;
+    -ms-background-position: -1620px -2520px;
+    -o-background-position: -1620px -2520px;
+    background-position: -1620px -2520px;
+  }
+}
+/* Ninja Sword Katana */
+/* line 32, builds/development/styles/sass/main.scss */
+.swordkatana {
+  -webkit-animation: swordkatana steps(11) 0.5s infinite;
+  -moz-animation: swordkatana steps(11) 0.5s infinite;
+  -ms-animation: swordkatana steps(11) 0.5s infinite;
+  -o-animation: swordkatana steps(11) 0.5s infinite;
+  animation: swordkatana steps(11) 0.5s infinite;
+}
+
+@-webkit-keyframes swordkatana {
+  0% {
+    -webkit-background-position: 0px -2700px;
+    -moz-background-position: 0px -2700px;
+    -ms-background-position: 0px -2700px;
+    -o-background-position: 0px -2700px;
+    background-position: 0px -2700px;
+  }
+  100% {
+    -webkit-background-position: -1980px -2700px;
+    -moz-background-position: -1980px -2700px;
+    -ms-background-position: -1980px -2700px;
+    -o-background-position: -1980px -2700px;
+    background-position: -1980px -2700px;
+  }
+}
+@keyframes swordkatana {
+  0% {
+    -webkit-background-position: 0px -2700px;
+    -moz-background-position: 0px -2700px;
+    -ms-background-position: 0px -2700px;
+    -o-background-position: 0px -2700px;
+    background-position: 0px -2700px;
+  }
+  100% {
+    -webkit-background-position: -1980px -2700px;
+    -moz-background-position: -1980px -2700px;
+    -ms-background-position: -1980px -2700px;
+    -o-background-position: -1980px -2700px;
+    background-position: -1980px -2700px;
+  }
+}
+/* Ninja Daggers */

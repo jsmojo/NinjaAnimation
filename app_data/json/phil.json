@@ -1,0 +1,110 @@
+{
+    "user": {
+        "name": "Phillip Medina",
+        "siteTitle": "Phillip",
+        "animeTitle" : "Here are some things that I know.",
+        "animeContent" : [
+        	{
+        		"para" : "JavaScript, JQuery, CoffeeScript, Underscore, HTML5, CSS3, Sass, XSLT, XML, JSON, NodeJS, AngularJS, Bootstrap, PhotoShop. "
+        	},
+        	{
+        		"para" : "The Ninja animation below was created using CSS3 and JavaScript. Click on any of the tech icons to see an animation clip or go free-style by clicking on the blue buttons. Have fun!"
+        	}
+        ],
+        "animeItems" : [
+        	{
+        		"image" : "/app_images/kickass-anime-javascript2.png",
+        		"title" : "javascript",
+        		"cssClass" : "javascript",
+        		"linkURL" : "#punch",
+        		"duration" : "700" 
+        	},
+        	{
+        		"image" : "/app_images/kickass-anime-html2.png",
+        		"title" : "HTML5",
+        		"cssClass" : "html5",
+        		"linkURL" : "#kick",
+        		"duration" : "700" 
+        	},
+        	{
+        		"image" : "/app_images/kickass-anime-css2.png",
+        		"title" : "CSS3",
+        		"cssClass" : "css3",
+        		"linkURL" : "#kneelpunch",
+        		"duration" : "700" 
+        	},
+        	{
+        		"image" : "/app_images/kickass-anime-rwd.png",
+        		"title" : "Responsive Web Design",
+        		"cssClass" : "css3",
+        		"linkURL" : "#backflip",
+        		"duration" : "700" 
+        	},
+        	{
+        		"image" : "/app_images/kickass-anime-bootstrap.png",
+        		"title" : "Bootstrap",
+        		"cssClass" : "css3",
+        		"linkURL" : "#groundkick",
+        		"duration" : "700" 
+        	}
+        ],
+        "fightPose" : [
+	        {
+	        	"title" : "Kick",
+	        	"cssClass" : "kick",
+	        	"duration" : "900"
+	        },
+	        {
+	        	"title" : "Punch",
+	        	"cssClass" : "punch",
+	        	"duration" : "700"
+	        },
+	        {
+	        	"title" : "Ground Kick",
+	        	"cssClass" : "groundkick",
+	        	"duration" : "600"
+	        },
+	        {
+	        	"title" : "Kneel Punch",
+	        	"cssClass" : "kneelpunch",
+	        	"duration" : "700"
+	        },
+	        {
+	        	"title" : "Low Kick",
+	        	"cssClass" : "lowkick",
+	        	"duration" : "500"
+	        },
+	        {
+	        	"title" : "Jump Kick",
+	        	"cssClass" : "jumpkick",
+	        	"duration" : "500"
+	        },
+	        {
+	        	"title" : "Front Flip",
+	        	"cssClass" : "frontflip",
+	        	"duration" : "700"
+	        },
+	        {
+	        	"title" : "Back Flip",
+	        	"cssClass" : "backflip",
+	        	"duration" : "700"
+	        },
+	        {
+	        	"title" : "Ninja Star",
+	        	"cssClass" : "ninjastar",
+	        	"duration" : "500"
+	        },
+	        {
+	        	"title" : "Sword Slice",
+	        	"cssClass" : "swordslice",
+	        	"duration" : "500"
+	        },
+	        {
+	        	"title" : "Sword Katana",
+	        	"cssClass" : "swordkatana",
+	        	"duration" : "500"
+	        }
+        ]
+    },
+    "stat": "ok"
+}
