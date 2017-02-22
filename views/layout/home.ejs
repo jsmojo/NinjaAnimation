@@ -1,0 +1,32 @@
+<div ui-view="navContent"></div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="anime section">
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col col-md-12">
+        <h3>{{dude.user.animeTitle}}</h3>
+        <p data-ng-repeat="animeContent in dude.user.animeContent">{{animeContent.para}}</p>
+      </div>
+    </div>
+    <div class="row animeIconsCntr">
+      <div class="col col-md-12">
+        <a href="{{animeIcons.linkURL}}" data-ng-repeat="animeIcons in dude.user.animeItems" ng-click="runAnime($event)" run-anime data-duration="{{animeIcons.duration}}"><img ng-src="{{animeIcons.image}}" title="{{animeIcons.title}}" /></a>
+      </div>
+      <div class="col col-md-12">
+        <button class="btn btn-info" style="margin: 10px 10px 0 0;"  data-fightClass="{{animeFreeStyleButtons.cssClass}}" data-ng-repeat="animeFreeStyleButtons in dude.user.fightPose"  single-action-anime data-duration="{{animeFreeStyleButtons.duration}}">{{animeFreeStyleButtons.title}}</button>
+      </div>
+    </div>
+    <div class="row animeContr">
+      <div class="col col-md-12">
+          <div class="kickass stance"></div>
+          <div class="competition"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- /container -->
+<div ui-view="footerContent"></div>
+  
+
