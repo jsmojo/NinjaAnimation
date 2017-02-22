@@ -25,4 +25,4 @@ Thumbs.db
 # Folders #
 ############
 typings
-node_modules
+#node_modules
