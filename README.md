@@ -3,6 +3,6 @@
 
 
 
-[Demo Link](https://phillip-ninja-animation.herokuapp.com/#/ "Demo Link")
+[https://phillip-ninja-animation.herokuapp.com/#/](https://phillip-ninja-animation.herokuapp.com/#/ "Demo Link")
 
 ![alt tag](https://github.com/jsmojo/NinjaAnimation/blob/master/demo_Ninja.jpg)
